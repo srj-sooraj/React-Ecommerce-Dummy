@@ -1,0 +1,137 @@
+/* ===== PRODUCT DETAILS ===== */
+.details-container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 900px;
+  padding: 40px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #0f172a, #020617);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  animation: fadeUp 0.6s ease;
+}
+
+.details-image img {
+  width: 100%;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+}
+
+.details-image img:hover {
+  transform: scale(1.05);
+}
+
+.details-info h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.details-info .desc {
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+.price-box {
+  margin: 20px 0;
+}
+
+.price {
+  font-size: 1.8rem;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #6366f1, #22c55e);
+  color: white;
+  border: none;
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(99,102,241,0.5);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #6366f1;
+  color: #6366f1;
+}
+
+.btn.outline:hover {
+  background: #6366f1;
+  color: white;
+}
+
+/* ===== CART PAGE ===== */
+.cart-container {
+  padding: 60px;
+}
+
+.cart-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.cart-card {
+  background: #020617;
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cart-card img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+.cart-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.cart-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.cart-price {
+  font-size: 1.3rem;
+  color: #22c55e;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
